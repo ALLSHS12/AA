@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View PDF Only</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 80%;
+            height: 600px;
+            border: none;
+        }
+
+        body, iframe {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("contextmenu", function(event) {
+            event.preventDefault();
+        });
+    </script>
+</head>
+<body>
+
+    <h1>View PDF (No Download Allowed)</h1>
+
+    <iframe src="Adobe-Scan-Feb-05-2025.pdf" allow="fullscreen"></iframe>
+    <iframe src="Adobe-Scan-Feb-05-2025-1.pdf" allow="function"></iframe>
+</html>
+
+
+
+
